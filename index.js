@@ -1,6 +1,4 @@
-const initRust = import('./pkg')
-
-initRust().then(({ greet }) => {
+import('./pkg').then(({ greet }) => {
   function handleSubmit() {
     event.preventDefault()
 
