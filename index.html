@@ -9,22 +9,6 @@
       <input type="text" id="name" name="name" required />
       <button type="submit">Greet Me!</button>
     </form>
-    <script type="module">
-      import init, { greet } from './pkg/rust_wasm_hello_world.js'
-
-      init().then(() => {
-        function handleSubmit() {
-          event.preventDefault()
-
-          const name = document.getElementById('name').value
-          const greeting = greet(name)
-          alert(greeting)
-        }
-
-        document
-          .getElementById('greeting-form')
-          .addEventListener('submit', handleSubmit)
-      })
-    </script>
+    <script src="./dist/index.js"></script>
   </body>
 </html>
