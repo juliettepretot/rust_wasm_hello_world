@@ -1,4 +1,4 @@
-import('./pkg').then(({ greet }) => {
+import('./rust/pkg').then(({ greet }) => {
   function handleSubmit() {
     event.preventDefault()
 

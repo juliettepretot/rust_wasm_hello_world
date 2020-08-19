@@ -1,5 +1,5 @@
 /node_modules
-/target
-/Cargo.lock
+/rust/target
+/rust/Cargo.lock
 /dist
 /pkg

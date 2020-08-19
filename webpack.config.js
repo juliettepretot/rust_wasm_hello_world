@@ -10,10 +10,12 @@ module.exports = {
     filename: 'index.js'
   },
   plugins: [
-    new CopyPlugin([path.resolve(__dirname, 'static')]),
+    new CopyPlugin({
+      patterns: [{ from: 'static' }]
+    }),
 
     new WasmPackPlugin({
-      crateDirectory: path.resolve(__dirname, '.')
+      crateDirectory: path.resolve(__dirname, 'rust')
     })
   ],
   mode: 'development'
